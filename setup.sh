@@ -31,7 +31,6 @@ apk --no-cache add \
   fontconfig \
   ghostscript \
   gnupg \
-  gnuplot \
   graphviz \
   make \
   openjdk11-jre-headless \
@@ -50,6 +49,11 @@ apk --no-cache add \
 apk --no-cache add \
   --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
   perl-file-homedir
+
+# Add gnuplot
+which gnuplot
+apk --no-cache add gnuplot
+which gnuplot
 
 echo "==> Install TeXLive"
 mkdir -p /tmp/install-tl
