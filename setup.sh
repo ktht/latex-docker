@@ -55,6 +55,9 @@ apk --no-cache \
   add \
   perl-file-homedir
 
+# Add gnuplot
+apk --no-cache add gnuplot
+
 echo "==> Install TeXLive"
 mkdir -p /tmp/install-tl
 cd /tmp/install-tl
