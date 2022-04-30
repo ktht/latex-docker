@@ -52,7 +52,7 @@ jobs:
         if: "matrix.scheme == 'full'"
       - name: Deploy
         run: |
-          TAG="ghcr.io/xu-cheng/texlive-$SCHEME"
+          TAG="ghcr.io/ktht/texlive-$SCHEME"
           VERSION="$(date "+%Y%m%d")"
           docker tag texlive-$SCHEME $TAG:$VERSION
           docker tag texlive-$SCHEME $TAG:latest

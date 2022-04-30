@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          TAG="ghcr.io/xu-cheng/texlive-${{ matrix.scheme }}"
+          TAG="ghcr.io/ktht/texlive-${{ matrix.scheme }}"
           VERSION="${{ github.event.inputs.version }}"
           docker pull $TAG:$VERSION
           docker tag $TAG:$VERSION $TAG:latest
