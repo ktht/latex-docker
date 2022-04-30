@@ -52,7 +52,6 @@ apk --no-cache add \
 
 # Add gnuplot
 apk --no-cache add gnuplot
-which gnuplot
 
 echo "==> Install TeXLive"
 mkdir -p /tmp/install-tl
