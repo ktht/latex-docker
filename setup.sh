@@ -51,7 +51,6 @@ apk --no-cache add \
   perl-file-homedir
 
 # Add gnuplot
-which gnuplot
 apk --no-cache add gnuplot
 which gnuplot
 
